@@ -38,8 +38,7 @@ M.tool_mdeditor.Y = {};
 M.tool_mdeditor.init_editor = function(Y) {
     M.tool_mdeditor.Y = Y;
 
-    Y.all('#translator .local textarea').each(function (textarea) {
-        var cell = textarea.get('parentNode');
-        textarea.setStyle('height', cell.getComputedStyle('height'));
+    Y.all('.editor_atto_content').each(function (textarea) {
+        textarea.setStyle('height', '250px');
     });
 }

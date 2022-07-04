@@ -124,7 +124,6 @@ foreach ($translator->strings as $string) {
 }
 
 echo $output->header();
-//$filter->display();
 echo $paginator;
 echo $output->render($translator);
 echo $paginator;
